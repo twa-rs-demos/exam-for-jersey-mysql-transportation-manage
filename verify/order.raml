@@ -173,9 +173,9 @@ mediaType: application/json
                         "container": {
                           "type": "integer"
                         }
-                       }
-                    },
-                    "required": ["name", "id", "containers"]
+                      },
+                      "required": ["name", "id", "containers"]
+                    }
                   }
                 }
               }
@@ -248,7 +248,7 @@ mediaType: application/json
           body:
             application/json:
               schema: |
-                {
+                 {
                   "$schema": "http://json-schema.org/draft-04/schema#",
                   "type": "object",
                   "properties": {
@@ -263,8 +263,9 @@ mediaType: application/json
                       "container": {
                         "type": "integer"
                       }
-                  },
-                  "required": ["name", "id", "containers"]
+                    },
+                    "required": ["name", "id", "containers"]
+                  }
                 }
               example: |
                 {
@@ -324,7 +325,8 @@ mediaType: application/json
                 "type": "object",
                 "required": true,
                 "totalCount": {
-                  "type": "integer"
+                  "type": "integer",
+                  "required": true
                 },
                 "containers": {
                   "type": "array",
@@ -405,8 +407,8 @@ mediaType: application/json
                     "id": {
                       "type": "integer",
                       "required": true
-
                     }
+                  }
                 }
               example: |
                 {
@@ -436,7 +438,7 @@ mediaType: application/json
           example: |
             {
               "id": 5
-             }
+            }
       responses:
         204:
 
